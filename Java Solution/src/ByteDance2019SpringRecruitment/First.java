@@ -1,3 +1,5 @@
+package ByteDance2019SpringRecruitment;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -6,7 +8,7 @@ import java.util.Scanner;
  * @date 8/7/2019 9:23 PM
  * 字节跳动2019春招研发部分编程题汇总 第1题
  **/
-public class ByteDance2019Spring1 {
+public class First {
     public static void main(String args[]) {
 
         int num;
