@@ -32,9 +32,9 @@ class Solution2 {
     private final int mod = 99997867;
     private long result = 0;
 
-    long totalProgram(int[] arrayList, int maxDistance) {
+    public long totalProgram(int[] arrayList, int maxDistance) {
 
-        for (int left = 0,right = 0; left <= arrayList.length - 1; left++) {
+        for (int left = 0, right = 0; left <= arrayList.length - 1; left++) {
             while (right < arrayList.length - 1 && arrayList[right + 1] - arrayList[left] <= maxDistance) {
                 right++;
             }
@@ -47,10 +47,9 @@ class Solution2 {
         }
         return result % mod;
 
-
     }
 
-    private long calcCn2(int n) {
+    private long calcCn2(long n) {
         return n * (n - 1) / 2;
     }
 
