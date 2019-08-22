@@ -1,4 +1,4 @@
-package ByteDance2019Fall;
+package ByteDance2019Autumn;
 
 import java.util.Scanner;
 
