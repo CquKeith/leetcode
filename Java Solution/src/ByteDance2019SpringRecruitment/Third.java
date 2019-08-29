@@ -1,6 +1,7 @@
 package ByteDance2019SpringRecruitment;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * @author Keith
