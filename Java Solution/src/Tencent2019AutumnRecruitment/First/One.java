@@ -1,4 +1,4 @@
-package Tencent2019AutumnRecruitment;
+package Tencent2019AutumnRecruitment.First;
 
 import java.util.Scanner;
 import java.util.Stack;
