@@ -530,7 +530,7 @@ sumRange(0, 5) -> -3
 
 ## [746. 使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/)
 
-数组的每个索引做为一个阶梯，第 i个阶梯对应着一个非负数的体力花费值 cost[i](索引从0开始)。
+数组的每个索引做为一个阶梯，第 i个阶梯对应着一个非负数的体力花费值 cost[i] (索引从0开始)。
 
 每当你爬上一个阶梯你都要花费对应的体力花费值，然后你可以选择继续爬一个阶梯或者爬两个阶梯。
 
@@ -551,6 +551,129 @@ sumRange(0, 5) -> -3
 
 cost 的长度将会在 [2, 1000]。
 每一个 cost[i] 将会是一个Integer类型，范围为 [0, 999]。
+
+# 字符串专题
+
+## [6. Z 字形变换](https://leetcode-cn.com/problems/zigzag-conversion/)
+
+将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。
+
+比如输入字符串为 "LEETCODEISHIRING" 行数为 3 时，排列如下：
+
+L   C   I   R
+E T O E S I I G
+E   D   H   N
+之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如："LCIRETOESIIGEDHN"。
+
+请你实现这个将字符串进行指定行数变换的函数：
+
+string convert(string s, int numRows);
+
+### 示例 1:
+
+> 输入: s = "LEETCODEISHIRING", numRows = 3
+> 输出: "LCIRETOESIIGEDHN"
+
+### 示例 2:
+
+> 输入: s = "LEETCODEISHIRING", numRows = 4
+> 输出: "LDREOEIIECIHNTSG"
+> 解释:
+
+> L     D     R
+> E   O E   I I
+> E C   I H   N
+> T     S     G
+
+## [916. 单词子集](https://leetcode-cn.com/problems/word-subsets/)
+
+我们给出两个单词数组 A 和 B。每个单词都是一串小写字母。
+
+现在，如果 b 中的每个字母都出现在 a 中，包括重复出现的字母，那么称单词 b 是单词 a 的子集。 例如，“wrr” 是 “warrior” 的子集，但不是 “world” 的子集。
+
+如果对 B 中的每一个单词 b，b 都是 a 的子集，那么我们称 A 中的单词 a 是通用的。
+
+你可以按任意顺序以列表形式返回 A 中所有的通用单词。
+
+ 
+
+### 示例 1：
+
+```
+输入：A = ["amazon","apple","facebook","google","leetcode"], B = ["e","o"]
+输出：["facebook","google","leetcode"]
+```
+
+
+
+### 示例 2：
+
+```
+输入：A = ["amazon","apple","facebook","google","leetcode"], B = ["l","e"]
+输出：["apple","google","leetcode"]
+```
+
+
+
+### 示例 3：
+
+```
+输入：A = ["amazon","apple","facebook","google","leetcode"], B = ["e","oo"]
+输出：["facebook","google"]
+```
+
+
+
+### 示例 4：
+
+```
+输入：A = ["amazon","apple","facebook","google","leetcode"], B = ["lo","eo"]
+输出：["google","leetcode"]
+```
+
+
+
+### 示例 5：
+
+```
+输入：A = ["amazon","apple","facebook","google","leetcode"], B = ["ec","oc","ceo"]
+输出：["facebook","leetcode"]
+```
+
+
+
+### 提示：
+
+```
+1 <= A.length, B.length <= 10000
+1 <= A[i].length, B[i].length <= 10
+A[i] 和 B[i] 只由小写字母组成。
+A[i] 中所有的单词都是独一无二的，也就是说不存在 i != j 使得 A[i] == A[j]。
+```
+
+## [336. 回文对](https://leetcode-cn.com/problems/palindrome-pairs/)
+
+给定一组唯一的单词， 找出所有不同 的索引对(i, j)，使得列表中的两个单词， words[i] + words[j] ，可拼接成回文串。
+
+### 示例 1:
+
+```
+输入: ["abcd","dcba","lls","s","sssll"]
+输出: [[0,1],[1,0],[3,2],[2,4]] 
+解释: 可拼接成的回文串为 ["dcbaabcd","abcddcba","slls","llssssll"]
+```
+
+
+
+### 示例 2:
+
+```
+输入: ["bat","tab","cat"]
+输出: [[0,1],[1,0]] 
+解释: 可拼接成的回文串为 ["battab","tabbat"]
+```
+
+
 
 # leetcode模拟面试
 
