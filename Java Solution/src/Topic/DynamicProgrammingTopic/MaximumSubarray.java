@@ -1,6 +1,4 @@
-package DynamicProgrammingTopic;
-
-import java.util.Arrays;
+package Topic.DynamicProgrammingTopic;
 
 /**
  * @author chenmengliang

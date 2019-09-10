@@ -1,4 +1,4 @@
-package DynamicProgrammingTopic;
+package Topic.DynamicProgrammingTopic;
 
 import java.util.HashMap;
 import java.util.Map;

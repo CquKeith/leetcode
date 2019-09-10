@@ -1,4 +1,4 @@
-package StringsTopic;
+package Topic.StringsTopic;
 
 import java.util.*;
 import java.util.stream.Collectors;

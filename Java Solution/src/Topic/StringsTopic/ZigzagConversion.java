@@ -1,4 +1,4 @@
-package StringsTopic;
+package Topic.StringsTopic;
 
 import java.util.ArrayList;
 import java.util.List;
