@@ -1,4 +1,3 @@
-import java.lang.annotation.ElementType;
 import java.util.Arrays;
 
 /**
@@ -7,7 +6,8 @@ import java.util.Arrays;
 public class QuickSort {
 
     public static void main(String[] args) {
-        int [] array = {34,65,12,43,67,5,78,10,3,3,3,70};
+        //int [] array = {34,65,12,43,67,5,78,10,3,3,3,70};
+        int [] array = {1,5,-2,-4,0};
         new QuickSort().quickSort(array,0,array.length-1);
         System.out.println(Arrays.toString(array));
     }
