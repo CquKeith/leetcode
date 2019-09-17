@@ -46,7 +46,7 @@ public class ValidParentheses {
 
         for (Character c :
                 s.toCharArray()) {
-            if (!stack.isEmpty() && c == parenthesMap.get(stack.peek())){
+            if (!stack.isEmpty() && c.equals(parenthesMap.get(stack.peek()))){
                 stack.pop();
             }else {
                 stack.push(c);
