@@ -1,6 +1,5 @@
-package Yuanfudao2019;
+package CompanyInterviews2020.Yuanfudao2019;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 

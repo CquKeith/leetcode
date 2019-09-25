@@ -1,4 +1,4 @@
-package Yuanfudao2019;
+package CompanyInterviews2020.Yuanfudao2019;
 
 import java.util.Scanner;
 
