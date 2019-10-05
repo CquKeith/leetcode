@@ -6,7 +6,7 @@ public class AddTwoNumbers {
     public static void main(String args[]) {
 
         //初始化第1个链表
-        ListNode firstLinkList = ListNode.createLinkListTailInsert(new int[]{5});
+        ListNode firstLinkList = ListNode.createLinkListTailInsert(new int[]{1,2,3,4,5});
         assert firstLinkList != null;
         firstLinkList.displayAllNodes();
         System.out.println();
