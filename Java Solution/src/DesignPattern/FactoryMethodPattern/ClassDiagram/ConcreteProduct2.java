@@ -1,4 +1,4 @@
-package DesignPattern.FactoryMethodPattern;
+package DesignPattern.FactoryMethodPattern.ClassDiagram;
 
 /**
  * @author chenmengliang

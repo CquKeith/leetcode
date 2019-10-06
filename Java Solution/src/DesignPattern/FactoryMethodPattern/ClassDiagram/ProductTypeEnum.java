@@ -1,4 +1,4 @@
-package DesignPattern.FactoryMethodPattern;
+package DesignPattern.FactoryMethodPattern.ClassDiagram;
 
 public enum ProductTypeEnum {
     TYPE1(1,"产品类型1"),
