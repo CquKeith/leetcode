@@ -25,9 +25,9 @@ public class QuickSort {
     private void quickSort(int[] A,int low,int high){
 
         if (low < high){
-            int pivotpos = partition(A,low,high);
-            quickSort(A,low,pivotpos-1);
-            quickSort(A,pivotpos+1,high);
+            int pivotPos = partition(A,low,high);
+            quickSort(A,low,pivotPos-1);
+            quickSort(A,pivotPos+1,high);
         }
 
 
