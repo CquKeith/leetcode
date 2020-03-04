@@ -1,4 +1,4 @@
-package Topic.ArrayTopic;
+package Topic.MathTopic;
 
 /**
  * @author chenmengliang
