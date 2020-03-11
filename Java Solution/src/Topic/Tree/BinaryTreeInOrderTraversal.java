@@ -8,12 +8,12 @@ import java.util.Stack;
  * @author chenmengliang
  * @date 2019/9/23 16:11
  **/
-public class BinaryTreeInorderTraversal {
+public class BinaryTreeInOrderTraversal {
 
     public static void main(String[] args) {
-        TreeNode root = TreeNode.createTree(new int[]{1, Integer.MIN_VALUE, 2, 3});
+        TreeNode root = TreeNode.createTree(new Integer[]{1, null, 2, 3});
 
-        System.out.println(new BinaryTreeInorderTraversal().inorderTraversalRecursive(root));
+        System.out.println(new BinaryTreeInOrderTraversal().inorderTraversalRecursive(root));
     }
 
     /**
@@ -22,7 +22,7 @@ public class BinaryTreeInorderTraversal {
      * @param root
      * @return
      */
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public List<Integer> inOrderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         TreeNode p = root;
