@@ -42,7 +42,6 @@ public class InOrder {
         Stack<TreeNode> stack = new Stack<>();
 
         while (root != null || !stack.isEmpty()){
-
             if (root != null){
                 stack.push(root);
                 root = root.left;//当前节点不为空，就往左走
@@ -51,11 +50,6 @@ public class InOrder {
                 System.out.print(root.val+" ");
                 root = root.right;//往右走
             }
-
-
         }
-
-
-
     }
 }
