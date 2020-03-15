@@ -10,7 +10,7 @@ import java.util.Stack;
  **/
 public class ValidateBinarySearchTree {
     public static void main(String[] args) {
-        TreeNode root = TreeNode.createTree(new int[]{1, Integer.MIN_VALUE, 2, 3});
+        TreeNode root = TreeNode.createTree(new Integer[]{1, null, 2, 3});
         System.out.println(new ValidateBinarySearchTree().isValidBST(root));
     }
 
