@@ -8,8 +8,8 @@ package Topic.Tree;
 public class SameTree {
     public static void main(String[] args) {
 
-        TreeNode p = TreeNode.createTree(new int[]{1, 2});
-        TreeNode q = TreeNode.createTree(new int[]{1, Integer.MIN_VALUE, 2});
+        TreeNode p = TreeNode.createTree(new Integer[]{1, 2});
+        TreeNode q = TreeNode.createTree(new Integer[]{1, null, 2});
 
         System.out.println(new SameTree().isSameTree(p, q));
 
@@ -45,27 +45,3 @@ public class SameTree {
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-
-    static TreeNode createTree(int[] data) {
-        if (data.length <= 0) {
-            return null;
-        }
-        TreeNode root = new TreeNode(data[0]);
-        for (int i = 1; i < data.length; i++) {
-
-            root.left = data[i] == Integer.MIN_VALUE ? null : new TreeNode(data[i]);
-            if (++i < data.length) {
-                root.right = data[i] == Integer.MIN_VALUE ? null : new TreeNode(data[i]);
-            }
-        }
-        return root;
-    }
-}
