@@ -1,4 +1,4 @@
-package CompanyInterviews2020.ShunFengTongCheng;
+package CompanyInterviews2020.Maoyan;
 
 import java.util.Arrays;
 
