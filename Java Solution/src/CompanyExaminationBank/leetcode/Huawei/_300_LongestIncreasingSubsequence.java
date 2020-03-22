@@ -22,8 +22,49 @@ public class _300_LongestIncreasingSubsequence {
     public static void main(String[] args) {
         _300_LongestIncreasingSubsequence longestIncreasingSubsequence = new _300_LongestIncreasingSubsequence();
         //System.out.println(longestIncreasingSubsequence.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 7, 101, 18}));
+        System.out.println(longestIncreasingSubsequence.lengthOfLIS(new int[]{10, 9, 2, 5, 3, 4}));
         //System.out.println(longestIncreasingSubsequence.lengthOfLIS(new int[]{2, 2}));
-        System.out.println(longestIncreasingSubsequence.lengthOfLIS(new int[]{1, 3, 6, 7, 9, 4, 10, 5, 6}));
+        //System.out.println(longestIncreasingSubsequence.lengthOfLIS(new int[]{1, 3, 6, 7, 9, 4, 10, 5, 6}));
+    }
+
+    /**
+     * 贪心 + 二分查找
+     * tail[i] 表示长度为i+1的LIS的尾部元素的值,
+     * 遍历nums，如果nums[i] > tail[len-1] 则 tail[len]=nums[i],len++
+     *          否则 二分查找tail的[0,len-1]的部分，找到使得tail[j-1]<nums[i]<tail[j]的j，
+     *          也就是tail[]中，比nums[i]大的最小值，令tail[j] = nums[i]
+     * @param nums
+     * @return
+     */
+    public int lengthOfLIS(int[] nums) {
+
+        if (nums.length <= 1) {
+            return nums.length;
+        }
+        int ans = 1;
+        int[] tail = new int[nums.length];
+        tail[0] = nums[0];
+        for (int num: nums) {
+            if (num > tail[ans - 1]) {
+                tail[ans] = num;
+                ans++;
+            } else {
+                // 找到tail[0,ans-1]中比num大的最小值
+                int left = 0, right = ans-1;
+                while (left < right) {
+                    int mid = (left + right) >> 1;
+                    if (tail[mid] < num) {
+                        left = mid + 1;
+                    } else {
+                        right = mid;
+                    }
+                }
+                tail[left] = num;
+            }
+        }
+
+
+        return ans;
     }
 
     /**
@@ -34,7 +75,7 @@ public class _300_LongestIncreasingSubsequence {
      * @param nums
      * @return
      */
-    public int lengthOfLIS(int[] nums) {
+    public int lengthOfLISOn2(int[] nums) {
         if (null == nums || nums.length <= 0) {
             return 0;
         }
