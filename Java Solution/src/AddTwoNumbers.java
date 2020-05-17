@@ -1,9 +1,11 @@
+import common.ListNode;
+
 /**
  * @author Keith
  * @date 2019/8/6 18:28
  **/
 public class AddTwoNumbers {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         //初始化第1个链表
         ListNode firstLinkList = ListNode.createLinkListTailInsert(new int[]{1,2,3,4,5});
@@ -72,52 +74,52 @@ public class AddTwoNumbers {
 /**
  * 链表节点类
  */
-class ListNode {
-
-
-    int val;
-    ListNode next = null;
-
-    ListNode(int x) {
-        val = x;
-    }
-
-
-    void displayAllNodes() {
-        ListNode node = this;
-        while (node != null) {
-            System.out.print(node.val + "  ");
-            node = node.next;
-        }
-    }
-
-    static ListNode createLinkListHeadInsert(int[] nums) {
-        if (nums.length < 1) {
-            return null;
-        }
-        ListNode head = new ListNode(nums.length);
-        for (int num : nums) {
-            ListNode node = new ListNode(num);
-            node.next = head.next;
-            head.next = node;
-        }
-        return head.next;
-    }
-    static ListNode createLinkListTailInsert(int[] nums) {
-        if (nums.length < 1) {
-            return null;
-        }
-        ListNode head = new ListNode(nums.length);
-        //尾节点
-        ListNode tail = head;
-        for (int num : nums) {
-            ListNode node = new ListNode(num);
-            tail.next = node;
-            tail = node;
-        }
-        return head.next;
-    }
-
-
-
-}
+//class common.ListNode {
+//
+//
+//    int val;
+//    common.ListNode next = null;
+//
+//    common.ListNode(int x) {
+//        val = x;
+//    }
+//
+//
+//    void displayAllNodes() {
+//        common.ListNode node = this;
+//        while (node != null) {
+//            System.out.print(node.val + "  ");
+//            node = node.next;
+//        }
+//    }
+//
+//    static common.ListNode createLinkListHeadInsert(int[] nums) {
+//        if (nums.length < 1) {
+//            return null;
+//        }
+//        common.ListNode head = new common.ListNode(nums.length);
+//        for (int num : nums) {
+//            common.ListNode node = new common.ListNode(num);
+//            node.next = head.next;
+//            head.next = node;
+//        }
+//        return head.next;
+//    }
+//    static common.ListNode createLinkListTailInsert(int[] nums) {
+//        if (nums.length < 1) {
+//            return null;
+//        }
+//        common.ListNode head = new common.ListNode(nums.length);
+//        //尾节点
+//        common.ListNode tail = head;
+//        for (int num : nums) {
+//            common.ListNode node = new common.ListNode(num);
+//            tail.next = node;
+//            tail = node;
+//        }
+//        return head.next;
+//    }
+//
+//
+//
+//}

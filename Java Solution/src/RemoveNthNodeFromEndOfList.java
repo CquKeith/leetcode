@@ -1,3 +1,5 @@
+import common.ListNode;
+
 /**
  * @author Keith
  * @date 8/20/2019 10:42

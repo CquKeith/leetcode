@@ -1,3 +1,5 @@
+import common.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,7 +12,7 @@ public class LinkedListCycle {
     public static void main(String[] args) {
 
         ListNode head = ListNode.createLinkListTailInsert(new int[]{3,2,0,-4});
-        //ListNode head = ListNode.createLinkListTailInsert(new int[]{1});
+        //common.ListNode head = common.ListNode.createLinkListTailInsert(new int[]{1});
         //尾节点的next 指向第几个节点 -1代表null，节点index从0开始
         int pos = 1;
         ListNode posNode = null, p = head;
